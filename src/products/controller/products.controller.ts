@@ -18,12 +18,14 @@ export class ProductsController {
        return this.productServices.addProduct(product);
     }
 
+    
     //get request for get all product
     @Get('all')
 
     findAllProducts() : Observable<Product[]> {
        return this.productServices.getProducts();
     }
+
 
     //update the added products
     @Put('update/:id')
